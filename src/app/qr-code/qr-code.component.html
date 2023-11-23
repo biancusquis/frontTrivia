@@ -1,6 +1,9 @@
-qr-code.component.html:
+
+<p>Escanea el QR para conectar la Trivia a tu Whatsapp</p>
+
+<div>
+<button (click)="iniciarWhatsApp()">Iniciar WhatsApp</button>
+</div>
 <div *ngIf="qrCodeUrl">
   <img [src]="qrCodeUrl" alt="WhatsApp QR Code">
 </div>
-
-<button (click)="iniciarWhatsApp()">Iniciar WhatsApp</button>
