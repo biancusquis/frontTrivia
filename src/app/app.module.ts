@@ -6,13 +6,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QrCodeComponent } from './qr-code/qr-code.component';
 import { SocketIoModule, SocketIoConfig } from 'ngx-socket-io';
+import { InvitadoTriviaComponent } from './invitado-trivia/invitado-trivia.component';
 const config: SocketIoConfig = { url: 'http://localhost:3000', options: {} };
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    QrCodeComponent
+    QrCodeComponent,
+    InvitadoTriviaComponent
   ],
   imports: [
     BrowserModule,
