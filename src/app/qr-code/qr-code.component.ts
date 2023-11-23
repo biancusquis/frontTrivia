@@ -12,7 +12,7 @@ export class QrCodeComponent {
   constructor(private http: HttpClient) { }
 
   iniciarWhatsApp() {
-    this.http.get<{ qrCodeUrl: string }>('http://localhost:3000/iniciar-whatsapp').subscribe(
+    this.http.get<{ qrCodeUrl: string }>('https://triviawsapp.tech/iniciar-whatsapp').subscribe(
       (response) => {
         console.log(response.qrCodeUrl); // Muestra la URL del código QR por consola
         this.qrCodeUrl = response.qrCodeUrl; // Asigna la URL para mostrarla en tu interfaz
